@@ -19,8 +19,7 @@ function Box({color}) {
   return (
     <>
     <div className='box' onClick={ ()=>setCount(count +1) }  style ={{backgroundColor:(color)}}>
-       <button >{count}</button>
-      <Progress count={count}/>
+    <Progress count={count}/>
     </div>
     </>
   )

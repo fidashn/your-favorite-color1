@@ -3,7 +3,7 @@ import Box from './Components/Box/Box';
 import './App.css';
 
 
-const colors = ["red", "yellow", "green", "blue", "black", "white", "gray", "purple", "pink", "orange"];
+const colors = ["red", "yellow", "green", "blue", "black", "brown", "gray", "purple", "pink", "orange"];
 
 
 function App() {
@@ -22,8 +22,9 @@ useEffect (()=> {
 
   return (
     <>
+    <div className='boxes-wrapper'>
     {colors.map(color => <Box color={color}/>)}
-       
+    </div>
 
 
       {(typeof backendData.users==='undefined') ?

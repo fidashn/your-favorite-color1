@@ -3,14 +3,7 @@ import React, {useEffect, useState} from 'react';
 const Progress = ( {count}) => {
 	const [style, setStyle] = useState("0px");
 	console.log(style);
-	// setTimeout(() => {
-	// 	const newStyle = {
-	// 		opacity: 1,
-      
-	// 	}
-		
-	// 	setStyle(newStyle);
-	// }, 200);
+
 
 
 
@@ -32,11 +25,23 @@ const Progress = ( {count}) => {
 useEffect(()=>{
 	chooseStyle(count)
 },[count])
+
+
+useEffect(()=>{
+	setTimeout(() => {
+		const newStyle = {
+			opacity: 1,
+      
+		}
+		
+		setStyle(newStyle);
+	}, 200);
+},[])
 	
 	return (
 		<div className="progress">
 			<div className="progress-done"  style={{width:(style)}}>
-			{count}
+			<button >{count}</button>
 			</div>
 		</div>
 	)

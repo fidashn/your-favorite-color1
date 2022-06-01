@@ -7,7 +7,6 @@
  .boxes-wrapper{
   width: 100vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 8vmin;
  }
@@ -24,7 +23,7 @@
   button {
     background: transparent;
     border: transparent;
-    color: #FF9472;
+    color: #FFF;
     font-weight: bold;
   }
 
@@ -46,7 +45,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    height: 100%;
+    width: 0;
     transition: 1s ease 0.3s;
   }
  
