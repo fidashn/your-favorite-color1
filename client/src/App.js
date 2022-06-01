@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import Counter from './Components/Counter/Counter';
-import Progress from './Components/Progress/Progress';
+import Box from './Components/Box/Box';
 import './App.css';
 
 
-
+const colors = ["red", "yellow", "green", "blue", "black", "white", "gray", "purple", "pink", "orange"];
 
 
 function App() {
@@ -23,8 +22,8 @@ useEffect (()=> {
 
   return (
     <>
-    <Counter />
-    <Progress done="200px"/>
+    {colors.map(color => <Box color={color}/>)}
+       
 
 
       {(typeof backendData.users==='undefined') ?
