@@ -4,9 +4,7 @@ const Progress = ( {count}) => {
 	const [style, setStyle] = useState("0px");
 	console.log(style);
 
-
-
-
+	
 	function chooseStyle (count) {
 	if (count >= 10 && count < 20){
 		setStyle("33.33px")
