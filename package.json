@@ -14,7 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server/server.js",
+    "start": "npm run dev && node ./server/server.js",
+    "dev":"cd server && npm i",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
