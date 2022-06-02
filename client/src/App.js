@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-// import useLocalStorage from'./useLocalStorage';
 import Box from './Components/Box/Box';
 import './App.css';
 
@@ -7,7 +6,6 @@ const colors = ["red", "yellow", "green", "blue", "black", "brown", "gray", "pur
 
 function App() {
 
-// const [user, setUserName] = useLocalStorage("user1", "Bob");
 
 const [backendData, setBackendData] = useState([{}])
 
